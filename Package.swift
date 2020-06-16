@@ -19,10 +19,13 @@ let package = Package(name: "CoreMotion",
                                    ]),
                       ],
                       dependencies: [
+                          .package(url: "https://github.com/PHIAR/simdFilament.git",
+                                   .branch("master")),
                       ],
                       targets: [
                           .target(name: "CoreMotion",
                                   dependencies: [
+                                      "simdFilament",
                                   ]),
                           .testTarget(name: "CoreMotionTests",
                                       dependencies: [
