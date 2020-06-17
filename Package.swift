@@ -14,6 +14,7 @@ let package = Package(name: "CoreMotion",
                       platforms: platforms,
                       products: [
                           .library(name: "CoreMotion",
+                                   type: .dynamic,
                                    targets: [
                                        "CoreMotion",
                                    ]),
